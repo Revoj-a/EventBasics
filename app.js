@@ -27,3 +27,8 @@ function twist() {
 function shout() {
   console.log("SHOUT");
 }
+
+const twashBtn = document.querySelector("#twash");
+
+twashBtn.addEventListener("click", twist, { once: true });
+twashBtn.addEventListener("click", shout);
